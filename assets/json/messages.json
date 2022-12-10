@@ -1,0 +1,24 @@
+{
+	"error" : {
+        "text": {
+            "prefix": "INVALID TEXT:",
+            "badClearText": "Text could not be encrypted.",
+            "badEncryptedText": "Invalid Encrypted Text"
+        },
+        "permission": {
+            "prefix": "PERMISSION ERROR:",
+            "noPermissionRole": "You do not have any of the the required roles to use the decrypt function."
+        },
+        "key": {
+            "prefix": "KEY ERROR:",
+            "badSignature": "Signature could not be verified."
+        }
+    },
+    "command" : {
+        "register": {
+            "prefix": "REGISTRATION SERVICE:",
+            "start": "Started refreshing application (/) commands.",
+            "success": "Successfully reloaded application (/) commands."
+        }
+    }
+}

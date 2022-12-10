@@ -1,0 +1,50 @@
+{
+  "permissions": {
+
+  },
+  "slashcommands": {
+    "encrypt": {
+      "name": "encrypt",
+      "description": "PGP Encrypts Message using 300MoneyGang PGP Key",
+      "options": [
+        {
+          "name": "text",
+          "description": "Unencrypted Text.",
+          "type": 3,
+          "required": true
+        },
+        {
+          "name": "passcode",
+          "description": "Passcode used for private key decryption.",
+          "type": 3,
+          "required": false
+        }
+      ]
+    },
+    "decrypt": {
+      "name": "decrypt",
+      "description": "Decrypts PGP Message",
+      "options": [
+        {
+          "name": "text",
+          "description": "Encrypted text.",
+          "type": 3,
+          "required": true
+        },
+        {
+          "name": "passcode",
+          "description": "Passcode used for private key decryption.",
+          "type": 3,
+          "required": false
+        }
+      ],
+      "permissions": [
+        {
+          "type": "USER",
+          "permission": false
+        }
+      ]
+    }
+  }
+}
+
